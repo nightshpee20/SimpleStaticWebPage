@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Nikola Marin">
+        <meta name="description" content="Web Programming Course Project: From Scratch">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+        <title>Nikola Marin Course Project</title>
+        <link rel="stylesheet" href="css/styles-scratch.css" type="text/css">
+
+    </head>
+    <body id="body">
+        
+        <nav class="menu" id="menu" onclick="checkWidth()">
+            <img id="navbar-logo" src="assets/website_logo.png" alt="Website logo">
+            <span id="arrow" class="arrow">
+                <span class="bar" id="up"></span>
+                <span class="bar" id="down"></span>
+            </span>
+                <a class="menu-item" href="#">Browse Gear</a>
+                <a class="menu-item" href="#">All Events</a>
+                <a class="menu-item" href="#">FAQs</a>
+            <div class="close">
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+
+        <main class="content-container">
+            
+            <aside id="sidebar">
+                <section id="side-nav">
+                    <a class="side-item" href="#">Categories</a>
+                    <a class="side-item" href="#">Events</a>
+                    <a class="side-item" href="#">News</a>
+                </section>
+            </aside>
+            
+            
+            <section id="content">
+            
+                <header class="header-container">
+                <section id="title">
+                    <img id="header-logo" src="assets/website_logo.png" alt="Website logo">
+                    <h1 class="title-text">Climbing Equipment</h1>
+                </section>
+
+                <section id="intro">
+                    <p>
+                        Get amped for your next ascent with our rock climbing shoes, 
+                        crag-ready clothing and mountaineering gear! Or check out the next big climbing event!
+                    </p>
+                </section>
+                <section id="pointers">
+                    <a href="#events">Events</a>
+                    <a href="#categories">Gear</a>
+                </section>
+                
+                </header>
+
+
+                <section id="categories">
+                <a href="#" id="shoes" class="item">
+                    <div class="text">Climbing shoes</div>  
+                </a>
+                <a href="#" id="ropes" class="item">
+                    <div class="text">Ropes</div>
+                </a>
+                <a href="#" id="harness" class="item">
+                    <div class="text">Harnesses</div>
+                </a>
+                <a href="#" id="helmets" class="item">
+                    <div class="text">Climbing Helmets</div>
+                </a>
+                <a href="#" id="miscs" class="item">
+                    <div class="text">Miscellaneous Items</div>
+                </a>
+                <a href="#" id="mats" class="item">
+                    <div class="text">Safety Mats</div>
+                </a>
+                </section>
+
+                <section id="events">
+                <h3>Upcoming Events</h3>
+                <div class="instance">
+                    <a href="#">IFSC -Climbing World Cup (B) - Meiringen (SUI) 2021</a>
+                    <p>16 April - 17 April 2021</p>
+                </div>
+                <div class="instance">
+                    <a href="#">IFSC -Climbing World Cup (B,S) - South Lake City (USA) 2021</a>
+                    <p>28 May - 30 May 2021</p>
+                </div>
+                <div class="instance">
+                    <a href="#">IFSC -Climbing World Cup (B,L) - Innsbruck (AUT) 2021</a>
+                    <p>23 June - 26 June 2021</p>
+                </div>
+                </section>
+
+
+                
+        
+            </section>
+        </main>
+
+        <footer class="footer-container">
+            <h4 class="social-title">Contact us at:</h4>
+            <div class="social">
+                <a href="#"><img class="icon" src="assets/icon_fb.png" alt="Facebook icon"></a>
+                <a href="#"><img class="icon" src="assets/icon_ig.png" alt="Instagram icon: "></a>
+                <a href="#"><img class="icon" src="assets/icon_wa.png" alt="WhatsApp icon: "></a>
+                <a id="validation" href="http://jigsaw.w3.org/css-validator/validator">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+            </div>
+            
+            </footer>
+        <script src="js/hamburger.js"></script> 
+    </body>
+</html>

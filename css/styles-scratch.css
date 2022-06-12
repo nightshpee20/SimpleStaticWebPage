@@ -1,0 +1,716 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: Helvetica, sans-serif, Arial;
+    
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #ebf7f9;
+}
+a
+{
+    text-decoration: none;
+}
+
+
+
+
+/* NAVBAR */
+.menu
+{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 80vh;
+    left: 90%;
+    border-radius: 20px;
+    background: #E89C31;
+    transition: 0.4s ease;
+    z-index: 10;
+    
+
+    display: flex;
+    justify-content: space-around;
+}
+.menu-open
+{
+    left: 0%;
+}
+.menu-item
+{
+    height: 10vh;
+    color: white;
+    line-height: 10vh;
+    font-size: 16px;
+    font-weight: bold;
+}
+.arrow
+{
+    right: 6vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bar
+{
+    height: 10%;
+    width: 4vh;
+    background-color: #083248;
+    margin: 15%;
+    border-radius: 25%;
+}
+.rotate-clockwise
+{
+    transform: rotate(45deg);
+    transition: 0.3s
+}
+.rotate-counter
+{
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+
+
+
+
+/* HEADER */
+.header-container
+{
+    display: flex;
+    flex-direction: column;
+    
+
+    
+
+
+    background-image: url(../assets/background-photo.jpg);
+    background-color: #083248;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 129.473684211vw;
+}
+
+
+
+
+#title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: relative;
+    top: 5vw;
+}
+#header-logo
+{
+    height: 10vw;
+    width: 10vw;
+}
+.title-text 
+{
+   line-height: 10vw;
+   font-size: 7vw;
+   margin: 0;
+   font-weight: lighter;
+}
+#intro
+{
+    position: relative;
+    text-align: center;
+    top: 50vw;
+    color: #4C5270;
+    font-size: 7vw;
+    padding: 0vw 3vw;
+}
+
+
+
+
+
+#pointers
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 52vw;
+}
+#pointers > a
+{
+    width: 25vw;
+    height: 9vw;
+    background: #083248;
+    border-radius: 3vw;
+    color: aliceblue;
+    text-align: center;
+    line-height: 9vw;
+    font-size: 3vw;
+}
+
+
+
+
+/* CONTENT */
+.content-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* SIDEBAR */
+#side-nav
+{
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    top: 1px;
+
+    padding: 2vw 0vw;
+    color: #0b2838;
+}
+.side-item
+{
+    width: 100%;
+    height: 5vw;
+    
+    text-align: center;
+    line-height: 5vw;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+
+    background: #e89c31;
+    color: #0b2838;
+}
+
+/* MAIN CONTENT*/
+#categories
+{
+    padding: 5vw 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item
+{
+    width: 80vw;
+    height: 80vw;
+    margin: 3vw 0vw;
+
+    border-radius: 5vw;
+    border: 1vw solid white;
+
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#shoes
+{
+    background-image: url(../assets/climbing_shoes.jpg);
+}
+#ropes
+{
+    background-image: url(../assets/climbing_ropes.jpg);
+}
+#harness
+{
+    background-image: url(../assets/climbing_harnesses.jpg);
+}
+#miscs
+{
+    background-image: url(../assets/climbing_miscs.jpg);
+}
+#helmets
+{
+    background-image: url(../assets/climbing_helmets.jpg);
+}
+#mats
+{
+    background-image: url(../assets/climbing_mats.jpg);
+}
+.text
+{
+    height: 10vw;
+    width: 35vw;
+    background: #0b2838;
+    position: relative;
+    top: 80%;
+    
+    line-height: 10vw;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+/* EVENTS */
+
+#events > h3
+{
+    margin: 0;
+    padding: 0vw 6vw;
+    font-size: 5.5vw;
+    font-weight: lighter;
+    color: #0b2838;
+}
+.instance
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vw 6vw;
+}
+.instance > a
+{
+    font-size: 5vw;
+    text-align: left;
+    color: #aa9342;
+}
+.instance > p
+{
+    position: relative;
+    width: 45vw;
+    left: 40vw;
+    font-size: 4vw;
+    color: #083248;
+}
+
+
+/* FOOTER */
+.footer-container
+{
+    background: #0b2838;
+    width: 100%;
+    height: 25vh;
+    
+
+    display: flex;
+    flex-direction: column;
+}
+.social-title
+{
+    margin: 2vh auto;
+    color: gray;
+    font-size: 4vw;
+    font-weight: lighter;
+
+    position: relative;
+    right: 12vw;
+}
+.social
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon
+{
+    width: 10vw;
+}
+.icon:hover
+{
+    opacity: 0.2;
+}
+
+#validation
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* INVISIBILE UNDER 576px WIDTH */
+#navbar-logo
+{
+    display: none;
+}
+#sidebar
+{
+    display: none;
+    background: #0b2838;
+}
+#miscs
+{
+    display: none;
+}
+#mats
+{
+    display: none;
+}
+
+@media screen and (min-width: 576px) /* DONE */
+{
+    body 
+    {
+        background: #ebf7f9;
+    }
+    #intro
+    {
+        font-size: 6vw;
+    }
+    #pointers
+    {
+        top: 50vw;
+    }
+    #categories
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vw;
+    }
+
+    .item
+    {
+        width: 45vw;
+        height: 45vw;
+        margin: initial;
+        justify-self: center;
+    }
+    .text
+    {
+        top: 7vw;
+        height: 8vw;
+        line-height: 8vw;
+    }
+    #helmets > div
+    {
+        top: 30vw;
+    }
+
+    .instance > a 
+    {
+        font-size: 4vw;
+    }
+    .instance > p
+    {
+        left: 45vw;
+    }
+
+    /* FOOTER */
+
+}
+@media screen and (min-width: 768px) /* DONE */
+{
+    body 
+    {
+        background: #ebf7f9;
+    }
+
+    /* HEADER */
+    #intro
+    {
+        font-size: 4vw;
+    }
+
+    #pointers
+    {
+        top: 55vw;
+    }
+    #pointers > a 
+    {
+        font-size: 2.5vw;
+    }
+
+    /* CATEGORIES */
+    #categories
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1vw;
+    }
+
+    .item
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+    .text
+    {
+        top: 4vw;
+        height: 6vw;
+        width: 25vw;
+        line-height: 6vw;
+        font-size: 2vw;
+    }
+    #ropes > div
+    {
+        top: 20vw;
+    }
+    #helmets
+    {
+        grid-column: 2/3;
+    }
+    #helmets > div 
+    {
+        top: 20vw;
+    }
+    #miscs
+    {
+        display: block;
+    }
+    #mats
+    {
+        display: block;
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    /* EVENTS */
+    #events > h3 
+    {
+        font-size: 5vw;
+    }
+
+    .instance > a
+    {
+        font-size: 3.5vw;
+    }
+    .instance > p
+    {
+        font-size: 3vw;
+    }
+
+    /* FOOTER */
+    .footer-container
+    {
+        height: 40vh;
+    }
+    .social-title
+    {
+        font-size: 3vw;
+        position: relative;
+        right: 27vw;
+    }
+    .social
+    {
+        justify-content: center;
+        position: relative;
+        right: 27vw;
+    }
+    .icon
+    {
+        margin: 0vw 2vw;
+        width: 8vw;
+    }
+
+    #validation
+    {
+        position: relative;
+        left: 50vw;
+    }
+}
+@media screen and (min-width: 992px) /* DONE */
+{
+    body 
+    {
+        background: #ebf7f9;
+    }
+    /* NAVBAR */
+    .menu-item
+    {
+        font-size: 20px;
+    }
+    /* HEADER */
+    #header-logo
+    {
+        height: 8vw;
+        width: 8vw;
+    }
+    .title-text
+    {
+        font-size: 6.5vw;
+        line-height: 8vw;
+    }
+
+    #intro
+    {
+        top: 55vw;
+    }
+
+    #pointers
+    {
+        top: 60vw;
+    }
+
+    /* EVENTS */
+    #events > h3
+    {
+        font-size: 4vw;
+    }
+
+    .instance > a
+    {
+        font-size: 3vw;
+    }
+
+    .instance > p
+    {
+        left: 45vw;
+        font-size: 2.5vw;
+    }
+
+    /* FOOTER */
+    .icon
+    {
+        width: 6vw;
+    }
+}
+@media screen and (min-width: 1200px) /* DONE */
+{
+    body 
+    {
+        background: #ebf7f9;
+    }
+
+    /* NAVBAR */
+    #menu
+    {
+        position: inherit;
+        border-radius: initial;
+        justify-content: initial;
+
+        height: 4.5vw;
+        width: 100vw;
+    }
+    #navbar-logo
+    {
+        display: block;
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+    .menu-item
+    {
+        height: 4.5vw;
+        line-height: 4.5vw;;
+        margin: 0vw 3vw;
+    }
+   
+    #arrow
+    {
+        display: none;
+    }
+
+    /* HEADER */
+    .header-container
+    {
+        height: 97vw;
+    }
+
+    #header-logo
+    {
+        display: none;
+    }
+
+    .title-text
+    {
+        font-size: 5vw;
+    }
+
+    #intro
+    {
+        font-size: 3vw;
+    }
+
+    #pointers > a
+    {
+        width: 17vw;
+        height: 6vw;
+        line-height: 6vw;
+        font-size: 2vw;
+    }
+    /* SIDEBAR */
+    #sidebar
+    { 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* MAIN */
+    .content-container
+    {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+    #categories
+    {
+        padding: 5vw 1vw;
+    }
+    .item
+    {
+        width: 24vw;
+        height: 24vw;
+
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 5vw;
+    }
+    .text
+    {
+        height: 4vw;
+        width: 18vw;
+
+        top: 22vw;
+        line-height: 4vw;
+
+        border: 1vw solid #e89c31;
+        border-radius: 2vw;
+
+        font-size: 1.5vw;
+
+    }
+    #ropes > div, 
+    #helmets > div
+    {
+        top: 22vw;
+    }
+    #miscs,
+    #mats
+    {
+        display: flex;
+    }
+    .instance > a
+    {
+        font-size: 2.5vw;
+    }
+    .instance > p
+    {
+        font-size: 1.8vw;
+    }
+
+    /* FOOTER */
+    .social-title
+    {
+        font-size: 2vw;
+    }
+    .icon
+    {
+        width: 4vw;
+    }
+
+    #validation
+    {
+        left: 60vw;
+    }
+}
+@media screen and (min-width: 1400px)
+{
+    body 
+    {
+        background: #ebf7f9;
+    }
+
+}
